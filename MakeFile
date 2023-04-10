@@ -1,0 +1,10 @@
+evenNums.txt : evenNums.py 
+	python3 evenNums.py > evenNums.txt
+
+countByThree.txt : countByThree.py 
+	python3 countByThree.py > countByThree.txt
+
+.PHONY : clean
+
+clean :
+	rm -f *.txt
